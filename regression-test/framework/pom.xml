@@ -414,10 +414,13 @@ under the License.
             <version>12.22.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+        <!-- netty 4.1.135.Final: patch DNS resolver bug. old netty (<=4.1.134) let an
+             attacker poison the DNS cache with fake NS/CNAME records. fix = bump version.
+             CVE-2026-47691, CVE-2026-45674, CVE-2026-45673. -->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.104.Final</version>
+            <version>4.1.135.Final</version>
         </dependency>
         <dependency>
             <groupId>org.awaitility</groupId>
